@@ -34,10 +34,6 @@ font-family: 'Inter', sans-serif; */
 .banner-section .main-column {
     margin: 0 auto;
     text-align: center;
-    /* background-color: #00000089; */
-    /* background-size: contain; */
-
-    /* clip-path: polygon(0 0, 20% 0, 100% 0, 100% 100%, 81% 100%, 80% 70%, 67% 54%, 29% 55%, 19% 73%, 19% 99%, 0 100%, 0% 85%);  */
 }
 
 
@@ -134,7 +130,8 @@ font-family: 'Inter', sans-serif; */
     align-items: center;
     display: flex;
     padding: 50px;
-    gap: 50px;
+    gap: 30px;
+    justify-content: space-around;
 
 
 }
@@ -171,6 +168,14 @@ font-family: 'Inter', sans-serif; */
     padding: 13px 40px;
     border-radius: 5px;
     box-shadow: 1px 1px 10px grey;
+    transition: .4s;
+}
+
+.party-section button:hover{
+    color: #FFF;
+    background-color: #078b0b;
+
+
 }
 
 /* .flex-column1{
@@ -179,10 +184,9 @@ font-family: 'Inter', sans-serif; */
 } */
 
 .party-section .flex-column img {
-    /* width: 319px;
-    height: 468px; */
-    width: 100%;
-    height: 400px;
+    width: 319px;
+    height: 468px;
+    /* width: 100%; */
 }
 
 /* year section ...................................................................................... */
@@ -381,11 +385,11 @@ font-family: 'Inter', sans-serif; */
     padding-top: 186px;
 }
 
-.sale-section .flex-column1 {
+.sale-section .flex-column1 .flex{
     position: relative;
 }
 
-.sale-section .flex-column1::after {
+.sale-section .flex-column1 .flex::after {
     content: '';
     position: absolute;
     background: url(./imame/Group\ 44.jpg);
@@ -652,10 +656,10 @@ font-family: 'Inter', sans-serif; */
 /* media query................................... */
 
 @media only screen and (max-width: 1080px) {
-    
+
     .banner-section {
         background-size: contain;
-     }
+    }
 
 
     .banner-section,
@@ -685,6 +689,11 @@ font-family: 'Inter', sans-serif; */
         border: 15px solid #F00;
     }
 
+    .party-section h2 {
+        font-size: 42px;
+        line-height: 55px;
+    }
+
 }
 
 
@@ -703,8 +712,8 @@ font-family: 'Inter', sans-serif; */
 }
 
 @media only screen and (max-width: 768px) {
-    
-    .banner-section{
+
+    .banner-section {
         background-image: url("./imame/Banner\ Image.png");
         opacity: .5 #000;
 
@@ -736,7 +745,23 @@ font-family: 'Inter', sans-serif; */
         grid-template-columns: 1fr;
         row-gap: 50px;
         align-items: center;
-       
+
+    }
+
+    .party-section .main-column {
+        align-items: center;
+        display: block;
+        padding: 50px;
+
+    }
+
+    .party-section .flex-column1 {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .party-section .flex-column img {
+        width: 100%;
     }
 
     .banner-section h1 {
@@ -744,6 +769,7 @@ font-family: 'Inter', sans-serif; */
         line-height: 40px;
 
     }
+
     .banner-section h3 {
         font-size: 25px;
         line-height: 40px;
@@ -754,7 +780,41 @@ font-family: 'Inter', sans-serif; */
         font-size: 30px;
         line-height: 40px;
     }
+
+    .discound-section h3 {
+        font-size: 36px;
+    }
+
+    .discound-section h2 {
+        font-size: 60px;
+    }
+    .gallery-section .main-column {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .communication-section .main-column {
+        padding: 50px;
+    }
+    .communication-section .main-column {
+        padding: 50px 20px;
+      }
+      .communication-section h1 {
+        font-size: 32px;
+    }
+
+    .footer-section .top-column {
+         display: block;
+      }
+    .footer-section .top-column .flex-column1{
+         padding-top: 20px;
+         border-bottom: 2px solid #fff;
+      }
+
+
 }
+
 
 @media only screen and (max-width: 520px) {
 
@@ -763,6 +823,7 @@ font-family: 'Inter', sans-serif; */
     .discound-section {
         margin: 50px 30px;
     }
+
     .container {
         padding: 0 30px;
     }
@@ -777,6 +838,15 @@ font-family: 'Inter', sans-serif; */
     .banner-section h3 {
         font-size: 20px;
         line-height: 30px;
+    }
+    .year-section h3 {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .gallery-section .main-column {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
     }
 }
 
