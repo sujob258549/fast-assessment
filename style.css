@@ -840,10 +840,9 @@ font-family: 'Inter', sans-serif; */
 
 
 @media only screen and (max-width: 520px) {
-
     .banner-section {
-        margin: -84px 50px -118px 50px;
-      }
+        margin: -56px 30px -118px 30px;
+    }
       .offer-section {
         padding: 30px 0;
     }
