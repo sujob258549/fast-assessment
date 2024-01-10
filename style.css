@@ -754,10 +754,9 @@ font-family: 'Inter', sans-serif; */
     }
 
     .party-section .main-column {
-        align-items: center;
-        display: block;
         padding: 50px;
-
+        flex-direction: column-reverse;
+        display: flex;
     }
 
     .party-section .flex-column1 {
